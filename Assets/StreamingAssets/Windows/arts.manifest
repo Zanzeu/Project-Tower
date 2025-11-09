@@ -1,0 +1,60 @@
+ManifestFileVersion: 0
+CRC: 2373410240
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 96edf1a097c100d866f4db616cb62ff6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5f0cc7b8d54427c914bf3f06e18ac689
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 96edf1a097c100d866f4db616cb62ff6
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 156049354
+  Script: {instanceID: 0}
+- Class: 483693784
+  Script: {instanceID: 0}
+- Class: 1839735485
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Arts/TowerIcon/AoE_level_3.png
+- Assets/Arts/TowerIcon/Debuff_level_3.png
+- Assets/Arts/TowerIcon/Debuff_level_1.png
+- Assets/Arts/EnemyIcon/enemy_boss.png
+- Assets/Arts/TowerIcon/Target_level_1.png
+- Assets/Arts/EnemyIcon/enemy_2.png
+- Assets/Arts/Circle.png
+- Assets/Arts/TowerIcon/Target_level_2.png
+- Assets/Arts/Tilemap/MapPalette.prefab
+- Assets/Arts/TowerIcon/AoE_level_1.png
+- Assets/Arts/EnemyIcon/enemy_4.png
+- Assets/Arts/TowerIcon/Debuff_level_2.png
+- Assets/Arts/heart-tower.png
+- Assets/Arts/EnemyIcon/enemy_3.png
+- Assets/Arts/EnemyIcon/enemy_1.png
+- Assets/Arts/Tilemap/path.asset
+- Assets/Arts/money-stack.png
+- Assets/Arts/TowerIcon/AoE_level_2.png
+- Assets/Arts/tower-flag.png
+- Assets/Arts/TowerIcon/Target_level_3.png
+- Assets/Arts/EnemyIcon/enemy_5.png
+Dependencies: []

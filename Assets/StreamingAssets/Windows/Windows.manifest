@@ -1,0 +1,14 @@
+ManifestFileVersion: 0
+CRC: 4117972928
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: jsondata
+      Dependencies: {}
+    Info_1:
+      Name: arts
+      Dependencies: {}
+    Info_2:
+      Name: prefab
+      Dependencies:
+        Dependency_0: arts

@@ -1,0 +1,4 @@
+repository "Project-Tower@tj_zanzeugame@cloud.cn"
+  path "/"
+    br "/main"
+    co "/main"

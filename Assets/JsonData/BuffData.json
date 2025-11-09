@@ -1,0 +1,110 @@
+[
+  {
+    "ID": "buff_1",
+    "Name": "slow",
+    "Type": 1,
+    "IconPath": null,
+    "Description": null,
+    "MaxStack": 1,
+    "Duration": 10.0,
+    "TickInterval": -1.0,
+    "Effects": {
+      "Start": [
+        {
+          "effectType": "AttriModifier",
+          "param": {
+            "$type": "Tower.Runtime.Gameplay.EffectParam_AttriModifier, Assembly-CSharp",
+            "attrForge": 4,
+            "value": -0.2
+          }
+        }
+      ]
+    }
+  },
+  {
+    "ID": "buff_2",
+    "Name": "extraDamage",
+    "Type": 1,
+    "IconPath": null,
+    "Description": null,
+    "MaxStack": 3,
+    "Duration": 10.0,
+    "TickInterval": -1.0,
+    "Effects": {
+      "Start": [
+        {
+          "effectType": "DamageModifier",
+          "param": {
+            "$type": "Tower.Runtime.Gameplay.EffectParam_DamageModifier, Assembly-CSharp",
+            "value": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "ID": "buff_3",
+    "Name": "born",
+    "Type": 1,
+    "IconPath": null,
+    "Description": null,
+    "MaxStack": 3,
+    "Duration": 10.0,
+    "TickInterval": 0.5,
+    "Effects": {
+      "Tick": [
+        {
+          "effectType": "TakeDamage",
+          "param": {
+            "$type": "Tower.Runtime.Gameplay.EffectParam_TakeDamage, Assembly-CSharp",
+            "damage": 1.0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "ID": "buff_4",
+    "Name": "speed",
+    "Type": 0,
+    "IconPath": null,
+    "Description": null,
+    "MaxStack": 1,
+    "Duration": 3.0,
+    "TickInterval": -1.0,
+    "Effects": {
+      "Start": [
+        {
+          "effectType": "AttriModifier",
+          "param": {
+            "$type": "Tower.Runtime.Gameplay.EffectParam_AttriModifier, Assembly-CSharp",
+            "attrForge": 4,
+            "value": 0.5
+          }
+        }
+      ]
+    }
+  },
+  {
+    "ID": "buff_5",
+    "Name": "ice",
+    "Type": 1,
+    "IconPath": null,
+    "Description": null,
+    "MaxStack": 1,
+    "Duration": 8.0,
+    "TickInterval": -1.0,
+    "Effects": {
+      "Start": [
+        {
+          "effectType": "ChangeAttrType",
+          "param": {
+            "$type": "Tower.Runtime.Gameplay.EffectParam_ChangeAttrType, Assembly-CSharp",
+            "attrType": 0,
+            "stack": false
+          }
+        }
+      ]
+    }
+  }
+]

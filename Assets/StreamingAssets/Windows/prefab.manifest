@@ -1,0 +1,91 @@
+ManifestFileVersion: 0
+CRC: 1590150068
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f4a824e38e5e8c9311948bc45aa0b113
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 86f76e3cf695311a09e46a0e91416678
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: f4a824e38e5e8c9311948bc45aa0b113
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a0d15b566c16a59498f6fd20c32d4ffe, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6f50f256eb49b5f4d89220859edd0c03, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a0eb0498e263756428c7270b3b81e329, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3b0f207141ce7fa46b8e8da275e215a7, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7f7b2360d8b25c84f8d50c2dd329c0a6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3377c5700c58ffd46aff7497cbff4b39, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 93afeeb3f4beb5145883dbc99a782468, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 195
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Sirenix.Serialization
+  ClassName: Sirenix.Serialization.SerializationData
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.AnimationTriggers
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Button/ButtonClickedEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.ColorBlock
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Navigation
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.SpriteState
+Assets:
+- Assets/Prefab/CheckRange.prefab
+- Assets/Prefab/target_bullet.prefab
+- Assets/Prefab/slow_vfx.prefab
+- Assets/Prefab/TowerAgent.prefab
+- Assets/Prefab/enemyCell.prefab
+- Assets/Prefab/boom_vfx.prefab
+- Assets/Prefab/EnemyAgent.prefab
+- Assets/Prefab/EnemyCheckCell.prefab
+- Assets/Prefab/ice_vfx.prefab
+Dependencies:
+- E:/EN/UnityProject/Project-Tower/Assets/StreamingAssets/Windows/arts

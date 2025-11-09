@@ -1,0 +1,142 @@
+[
+  {
+    "ID": "enemy_1",
+    "Name": "red",
+    "IconPath": "enemy_1",
+    "Des": "Ordinary red ghost, harmless",
+    "Health": 2.0,
+    "Speed": 1.0,
+    "Money": 4,
+    "ImmuneBuff": [],
+    "DefaultEffects": {}
+  },
+  {
+    "ID": "enemy_2",
+    "Name": "blue",
+    "IconPath": "enemy_2",
+    "Des": "Slightly stronger than the red ghost, death summons a red ghost",
+    "Health": 5.0,
+    "Speed": 1.3,
+    "Money": 6,
+    "ImmuneBuff": [],
+    "DefaultEffects": {
+      "Die": [
+        {
+          "effectType": "ReleasePrefab",
+          "param": {
+            "$type": "Tower.Runtime.Gameplay.EffectParam_ReleasePrefab, Assembly-CSharp",
+            "prefabName": "enemy_1"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "ID": "enemy_3",
+    "Name": "green",
+    "IconPath": "enemy_3",
+    "Des": "Slightly stronger than the blue ghost, death summons a blue ghost",
+    "Health": 10.0,
+    "Speed": 1.5,
+    "Money": 8,
+    "ImmuneBuff": [],
+    "DefaultEffects": {
+      "Die": [
+        {
+          "effectType": "ReleasePrefab",
+          "param": {
+            "$type": "Tower.Runtime.Gameplay.EffectParam_ReleasePrefab, Assembly-CSharp",
+            "prefabName": "enemy_2"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "ID": "enemy_4",
+    "Name": "speed",
+    "IconPath": "enemy_4",
+    "Des": "Extremely fast, death applies acceleration buff to other ghosts",
+    "Health": 14.0,
+    "Speed": 2.0,
+    "Money": 10,
+    "ImmuneBuff": [],
+    "DefaultEffects": {
+      "Die": [
+        {
+          "effectType": "ReleasePrefab",
+          "param": {
+            "$type": "Tower.Runtime.Gameplay.EffectParam_ReleasePrefab, Assembly-CSharp",
+            "prefabName": "enemy_1"
+          }
+        },
+        {
+          "effectType": "AddSpeedAllEnemy",
+          "param": {
+            "$type": "Tower.Runtime.Gameplay.EffectParam_AddSpeedAllEnemy, Assembly-CSharp"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "ID": "enemy_5",
+    "Name": "ice",
+    "IconPath": "enemy_5",
+    "Des": "Slow speed, death freezes nearby tower",
+    "Health": 8.0,
+    "Speed": 0.8,
+    "Money": 10,
+    "ImmuneBuff": [],
+    "DefaultEffects": {
+      "Die": [
+        {
+          "effectType": "CreateIceAoE",
+          "param": {
+            "$type": "Tower.Runtime.Gameplay.EffectParam_CreateIceAoE, Assembly-CSharp",
+            "boomVFX": "ice_vfx",
+            "boomRadius": 3.0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "ID": "enemy_6",
+    "Name": "boos",
+    "IconPath": "enemy_boss",
+    "Des": "Colorful ghosts, immune to damage and burning, death summons a large number of ghosts",
+    "Health": 40.0,
+    "Speed": 1.4,
+    "Money": 18,
+    "ImmuneBuff": [
+      "buff_2",
+      "buff_3"
+    ],
+    "DefaultEffects": {
+      "Die": [
+        {
+          "effectType": "ReleasePrefab",
+          "param": {
+            "$type": "Tower.Runtime.Gameplay.EffectParam_ReleasePrefab, Assembly-CSharp",
+            "prefabName": "enemy_4"
+          }
+        },
+        {
+          "effectType": "ReleasePrefab",
+          "param": {
+            "$type": "Tower.Runtime.Gameplay.EffectParam_ReleasePrefab, Assembly-CSharp",
+            "prefabName": "enemy_3"
+          }
+        },
+        {
+          "effectType": "ReleasePrefab",
+          "param": {
+            "$type": "Tower.Runtime.Gameplay.EffectParam_ReleasePrefab, Assembly-CSharp",
+            "prefabName": "enemy_2"
+          }
+        }
+      ]
+    }
+  }
+]

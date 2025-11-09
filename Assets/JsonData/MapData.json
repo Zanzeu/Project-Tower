@@ -1,0 +1,197 @@
+{
+  "Levels": [
+    {
+      "ID": "map_level_1",
+      "Name": "默认名称",
+      "SpawnInterval": 15,
+      "PointPositions": [
+        {
+          "x": -10.88,
+          "y": 1.15
+        },
+        {
+          "x": 1.16,
+          "y": 1.15
+        },
+        {
+          "x": 1.16,
+          "y": 4.04
+        },
+        {
+          "x": -2.7,
+          "y": 4.04
+        },
+        {
+          "x": -2.7,
+          "y": -4.1
+        },
+        {
+          "x": -6.3,
+          "y": -4.1
+        },
+        {
+          "x": -6.3,
+          "y": -1.17
+        },
+        {
+          "x": 4.06,
+          "y": -1.17
+        },
+        {
+          "x": 4.06,
+          "y": 2.71
+        },
+        {
+          "x": 6.36,
+          "y": 2.71
+        },
+        {
+          "x": 6.36,
+          "y": -7.15
+        }
+      ],
+      "WaveConfig": [
+        {
+          "Waves": [
+            {
+              "EnemyID": "enemy_1",
+              "SpawnCount": 10
+            }
+          ]
+        },
+        {
+          "Waves": [
+            {
+              "EnemyID": "enemy_1",
+              "SpawnCount": 15
+            },
+            {
+              "EnemyID": "enemy_2",
+              "SpawnCount": 2
+            }
+          ]
+        },
+        {
+          "Waves": [
+            {
+              "EnemyID": "enemy_1",
+              "SpawnCount": 5
+            },
+            {
+              "EnemyID": "enemy_2",
+              "SpawnCount": 5
+            }
+          ]
+        },
+        {
+          "Waves": [
+            {
+              "EnemyID": "enemy_2",
+              "SpawnCount": 10
+            }
+          ]
+        },
+        {
+          "Waves": [
+            {
+              "EnemyID": "enemy_2",
+              "SpawnCount": 10
+            },
+            {
+              "EnemyID": "enemy_3",
+              "SpawnCount": 3
+            }
+          ]
+        },
+        {
+          "Waves": [
+            {
+              "EnemyID": "enemy_3",
+              "SpawnCount": 10
+            }
+          ]
+        },
+        {
+          "Waves": [
+            {
+              "EnemyID": "enemy_4",
+              "SpawnCount": 1
+            },
+            {
+              "EnemyID": "enemy_2",
+              "SpawnCount": 5
+            },
+            {
+              "EnemyID": "enemy_1",
+              "SpawnCount": 10
+            }
+          ]
+        },
+        {
+          "Waves": [
+            {
+              "EnemyID": "enemy_4",
+              "SpawnCount": 1
+            },
+            {
+              "EnemyID": "enemy_3",
+              "SpawnCount": 5
+            },
+            {
+              "EnemyID": "enemy_2",
+              "SpawnCount": 10
+            },
+            {
+              "EnemyID": "enemy_4",
+              "SpawnCount": 1
+            }
+          ]
+        },
+        {
+          "Waves": [
+            {
+              "EnemyID": "enemy_5",
+              "SpawnCount": 5
+            },
+            {
+              "EnemyID": "enemy_4",
+              "SpawnCount": 1
+            },
+            {
+              "EnemyID": "enemy_5",
+              "SpawnCount": 10
+            },
+            {
+              "EnemyID": "enemy_4",
+              "SpawnCount": 1
+            }
+          ]
+        },
+        {
+          "Waves": [
+            {
+              "EnemyID": "enemy_1",
+              "SpawnCount": 5
+            },
+            {
+              "EnemyID": "enemy_1",
+              "SpawnCount": 5
+            },
+            {
+              "EnemyID": "enemy_2",
+              "SpawnCount": 2
+            },
+            {
+              "EnemyID": "enemy_5",
+              "SpawnCount": 5
+            },
+            {
+              "EnemyID": "enemy_6",
+              "SpawnCount": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

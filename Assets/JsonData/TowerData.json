@@ -1,0 +1,260 @@
+[
+  {
+    "ID": "tower_1_level_1",
+    "Name": "tower_1",
+    "IconPath": "Target_level_1",
+    "Des": "Single target damage, fast attack speed, long range",
+    "Attack": 1.0,
+    "HitSpeed": 2.0,
+    "Range": 2.0,
+    "Cost": 20,
+    "NextID": "tower_1_level_2",
+    "DefaultEffects": {
+      "Action": [
+        {
+          "effectType": "FireBullet",
+          "param": {
+            "$type": "Tower.Runtime.Gameplay.EffectParam_FireBullet, Assembly-CSharp",
+            "bulletName": "target_bullet",
+            "targetCount": 1,
+            "takeDamage": true,
+            "boom": false,
+            "boomRadius": 0.0,
+            "boomRate": 0.0,
+            "boomVFX": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "ID": "tower_1_level_2",
+    "Name": null,
+    "IconPath": "Target_level_2",
+    "Des": "Increase damage, attack speed, and attack range",
+    "Attack": 2.0,
+    "HitSpeed": 1.5,
+    "Range": 2.5,
+    "Cost": 14,
+    "NextID": "tower_1_level_3",
+    "DefaultEffects": {
+      "Action": [
+        {
+          "effectType": "FireBullet",
+          "param": {
+            "$type": "Tower.Runtime.Gameplay.EffectParam_FireBullet, Assembly-CSharp",
+            "bulletName": "target_bullet",
+            "targetCount": 1,
+            "takeDamage": true,
+            "boom": false,
+            "boomRadius": 0.0,
+            "boomRate": 0.0,
+            "boomVFX": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "ID": "tower_1_level_3",
+    "Name": null,
+    "IconPath": "Target_level_3",
+    "Des": "Can simultaneously attack two targets",
+    "Attack": 4.0,
+    "HitSpeed": 1.0,
+    "Range": 3.2,
+    "Cost": 20,
+    "NextID": "MAX",
+    "DefaultEffects": {
+      "Action": [
+        {
+          "effectType": "FireBullet",
+          "param": {
+            "$type": "Tower.Runtime.Gameplay.EffectParam_FireBullet, Assembly-CSharp",
+            "bulletName": "target_bullet",
+            "targetCount": 2,
+            "takeDamage": true,
+            "boom": false,
+            "boomRadius": 0.0,
+            "boomRate": 0.0,
+            "boomVFX": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "ID": "tower_2_level_1",
+    "Name": null,
+    "IconPath": "AoE_level_1",
+    "Des": "AoE damage, slow attack speed",
+    "Attack": 1.0,
+    "HitSpeed": 3.0,
+    "Range": 1.5,
+    "Cost": 22,
+    "NextID": "tower_2_level_2",
+    "DefaultEffects": {
+      "Action": [
+        {
+          "effectType": "FireBullet",
+          "param": {
+            "$type": "Tower.Runtime.Gameplay.EffectParam_FireBullet, Assembly-CSharp",
+            "bulletName": "target_bullet",
+            "targetCount": 1,
+            "takeDamage": false,
+            "boom": true,
+            "boomRadius": 0.7,
+            "boomRate": 1.0,
+            "boomVFX": "boom_vfx"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "ID": "tower_2_level_2",
+    "Name": null,
+    "IconPath": "AoE_level_2",
+    "Des": "Increase explosion range and damage",
+    "Attack": 2.0,
+    "HitSpeed": 2.5,
+    "Range": 2.0,
+    "Cost": 18,
+    "NextID": "tower_2_level_3",
+    "DefaultEffects": {
+      "Action": [
+        {
+          "effectType": "FireBullet",
+          "param": {
+            "$type": "Tower.Runtime.Gameplay.EffectParam_FireBullet, Assembly-CSharp",
+            "bulletName": "target_bullet",
+            "targetCount": 1,
+            "takeDamage": false,
+            "boom": true,
+            "boomRadius": 1.2,
+            "boomRate": 1.5,
+            "boomVFX": "boom_vfx"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "ID": "tower_2_level_3",
+    "Name": null,
+    "IconPath": "AoE_level_3",
+    "Des": "Increase explosion range and damage",
+    "Attack": 4.0,
+    "HitSpeed": 2.0,
+    "Range": 2.5,
+    "Cost": 22,
+    "NextID": "MAX",
+    "DefaultEffects": {
+      "Action": [
+        {
+          "effectType": "FireBullet",
+          "param": {
+            "$type": "Tower.Runtime.Gameplay.EffectParam_FireBullet, Assembly-CSharp",
+            "bulletName": "target_bullet",
+            "targetCount": 1,
+            "takeDamage": false,
+            "boom": true,
+            "boomRadius": 1.0,
+            "boomRate": 2.0,
+            "boomVFX": "boom_vfx"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "ID": "tower_3_level_1",
+    "Name": null,
+    "IconPath": "Debuff_level_1",
+    "Des": "No damage, causing deceleration",
+    "Attack": 0.0,
+    "HitSpeed": 3.0,
+    "Range": 2.0,
+    "Cost": 28,
+    "NextID": "tower_3_level_2",
+    "DefaultEffects": {
+      "Action": [
+        {
+          "effectType": "CreateSlowAoE",
+          "param": {
+            "$type": "Tower.Runtime.Gameplay.EffectParam_CreateSlowAoE, Assembly-CSharp",
+            "boomRadius": 0.7,
+            "boomVFX": "slow_vfx"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "ID": "tower_3_level_2",
+    "Name": null,
+    "IconPath": "Debuff_level_2",
+    "Des": "Apply additional vulnerable buffs",
+    "Attack": 0.0,
+    "HitSpeed": 2.5,
+    "Range": 2.5,
+    "Cost": 20,
+    "NextID": "tower_3_level_3",
+    "DefaultEffects": {
+      "Action": [
+        {
+          "effectType": "CreateSlowAoE",
+          "param": {
+            "$type": "Tower.Runtime.Gameplay.EffectParam_CreateSlowAoE, Assembly-CSharp",
+            "boomRadius": 1.0,
+            "boomVFX": "slow_vfx"
+          }
+        },
+        {
+          "effectType": "CreateDamageModifierAoE",
+          "param": {
+            "$type": "Tower.Runtime.Gameplay.EffectParam_CreateDamageModifierAoE, Assembly-CSharp",
+            "boomRadius": 1.0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "ID": "tower_3_level_3",
+    "Name": null,
+    "IconPath": "Debuff_level_3",
+    "Des": "Apply additional burn buffs",
+    "Attack": 0.0,
+    "HitSpeed": 2.2,
+    "Range": 3.0,
+    "Cost": 24,
+    "NextID": "MAX",
+    "DefaultEffects": {
+      "Action": [
+        {
+          "effectType": "CreateSlowAoE",
+          "param": {
+            "$type": "Tower.Runtime.Gameplay.EffectParam_CreateSlowAoE, Assembly-CSharp",
+            "boomRadius": 1.5,
+            "boomVFX": "slow_vfx"
+          }
+        },
+        {
+          "effectType": "CreateDamageModifierAoE",
+          "param": {
+            "$type": "Tower.Runtime.Gameplay.EffectParam_CreateDamageModifierAoE, Assembly-CSharp",
+            "boomRadius": 1.5
+          }
+        },
+        {
+          "effectType": "CreateBurnAoE",
+          "param": {
+            "$type": "Tower.Runtime.Gameplay.EffectParam_CreateBurnAoE, Assembly-CSharp",
+            "boomRadius": 1.5
+          }
+        }
+      ]
+    }
+  }
+]
